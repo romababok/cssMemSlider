@@ -34,7 +34,7 @@ img{
   transform: translate(0);
 }
 
-#slide1:checked ~ div .text .text__overflow {
+#slide1:checked ~ div .text .description-overflow {
   transform: translate(0);
 }
 
@@ -42,7 +42,7 @@ img{
   transform: translate(-25%, 0);
 }
 
-#slide2:checked ~ div .text .text__overflow {
+#slide2:checked ~ div .text .description-overflow {
   transform: translate(-25%, 0);
 }
 
@@ -50,7 +50,7 @@ img{
   transform: translate(-50%, 0);
 }
 
-#slide3:checked ~ div .text .text__overflow{
+#slide3:checked ~ div .text .description-overflow{
   transform: translate(-50%, 0);
 }
 
@@ -58,7 +58,7 @@ img{
   transform: translate(-75%, 0);
 }
 
-#slide4:checked ~ div .text .text__overflow{
+#slide4:checked ~ div .text .description-overflow{
   transform: translate(-75%, 0);
 }
 .slides .image-wrapper {
@@ -125,7 +125,7 @@ img{
   }
 }
 
-.text__overflow {
+.description-overflow {
   background: black;
   display: flex;
   transition: all 1s;
