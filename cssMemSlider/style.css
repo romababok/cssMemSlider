@@ -95,6 +95,9 @@ img{
 .buttons label:hover{
   background-color: #44ad81;
 }
+.buttons label:active{
+  background-color: #dfee0a;
+}
 
 #slide1:checked ~ div .buttons label:nth-child(1),
 #slide2:checked ~ div .buttons label:nth-child(2),
