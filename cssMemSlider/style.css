@@ -70,11 +70,12 @@ img{
   width: 400%;
   line-height: 0;
   height: 100%;
+  display: flex;
 }
 .slides .slide {
   height: 36rem;
   width: 25%;
-  float:left;
+
   display: flex;
   justify-content: center;
   align-items: center;
