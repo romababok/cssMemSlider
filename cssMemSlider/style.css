@@ -1,0 +1,156 @@
+body{
+  background-color: black;
+}
+
+img{
+  width: 95%;
+}
+.slider input[type=radio] {
+  display: none;
+}
+
+.slider {
+  margin: 0 auto;
+  width: 95%;
+  max-width: 100%;
+  text-align: center;
+}
+
+.slider label {
+  cursor:pointer;
+  text-decoration: none;
+}
+
+.slides {
+  padding: 0.6rem;
+  border: 0.2rem solid #2b1e1e;
+  background: #2b1e1e;
+  position: relative;
+  z-index: 1;
+}
+
+.overflow {
+  width: 100%;
+  overflow: hidden;
+}
+
+#slide1:checked ~ .slides .image-wrapper {
+  transform: translate(0);
+}
+
+#slide1:checked ~ div .text .description-overflow {
+  transform: translate(0);
+}
+
+#slide2:checked ~ .slides .image-wrapper {
+  transform: translate(-25%, 0);
+}
+
+#slide2:checked ~ div .text .description-overflow {
+  transform: translate(-25%, 0);
+}
+
+#slide3:checked ~ .slides .image-wrapper {
+  transform: translate(-50%, 0);
+}
+
+#slide3:checked ~ div .text .description-overflow{
+  transform: translate(-50%, 0);
+}
+
+#slide4:checked ~ .slides .image-wrapper {
+  transform: translate(-75%, 0);
+}
+
+#slide4:checked ~ div .text .description-overflow{
+  transform: translate(-75%, 0);
+}
+.slides .image-wrapper {
+  transition: all 1s;
+  width: 400%;
+  line-height: 0;
+  height: 100%;
+  display: flex;
+}
+.slides .slide {
+  height: 36rem;
+  width: 25%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: #2b1e1e;
+}
+
+.buttons {
+  margin:0;
+  text-align: center;
+}
+.buttons label {
+  display: inline-block;
+  width: 0.6rem;
+  height: 0.6rem;
+  border: 1.4rem solid black;
+  border-radius:100%;
+  background: #ccc;
+  margin: 0;
+}
+
+.buttons label:hover{
+  background-color: #44ad81;
+}
+.buttons label:active{
+  background-color: #dfee0a;
+}
+
+#slide1:checked ~ div .buttons label:nth-child(1),
+#slide2:checked ~ div .buttons label:nth-child(2),
+#slide3:checked ~ div .buttons label:nth-child(3),
+#slide4:checked ~ div .buttons label:nth-child(4) {
+  background: #5c1f1f;
+}
+
+.controls-wrapper{
+  background: black;
+  display: flex;
+  height: 4rem;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  flex-direction: row-reverse;
+}
+
+.text {
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  width: 60%;
+}
+@media screen and (max-width: 900px) {
+  .text {
+     width: 100%;
+  }
+}
+
+.description-overflow {
+  background: black;
+  display: flex;
+  transition: all 1s;
+  width: 400%;
+}
+
+.description-wrapper {
+  display: flex;
+  color: white;
+  width: 400%;
+}
+.description {
+  width: 25%;
+  padding-left: 2rem;
+  text-align: start;
+}
+
+
+
+
